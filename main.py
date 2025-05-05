@@ -30,11 +30,15 @@ Job Description:
 """
 
     system_prompt = """
-You are a resume screening expert. Given a resume and job description, perform the following:
 
-1. Estimate a match percentage based on the alignment of the resume to the job description.
-2. Identify key technical or soft skills missing from the resume.
-3. Give a 2-line suggestion to improve the resume.
+You are a resume screening AI assistant. Given a resume and a job description, perform the following tasks:
+
+1. **Match Percentage**: Calculate the overall match percentage based on how well the resume aligns with the job description. Focus on key skills, experience, and relevant qualifications.
+   
+2. **Missing Skills**: Identify specific skills that are mentioned in the job description but are not present in the resume. This includes both technical and soft skills. Highlight critical missing skills that could impact a successful application.
+
+3. **Improvement Suggestion**: Provide a concise, actionable suggestion (2-3 lines) to improve the resume, either by adding missing skills, optimizing the structure, or improving specific sections to better match the job description.
+
 
 ⚠️ Format your output strictly as a JSON object like this:
 {
@@ -90,7 +94,7 @@ with col1:
     st.markdown("### 🧾 Paste Job Description")
     job_description = st.text_area(label="", height=250)
 
-    
+
 # Footer-style Analyze Button (centered)
 footer_col = st.container()
 with footer_col:
