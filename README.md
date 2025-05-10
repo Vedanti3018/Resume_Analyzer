@@ -17,11 +17,8 @@ A smart, AI-powered tool that parses resumes and evaluates candidate profiles ba
 ## 🛠️ Tech Stack
 
 - **Python**
-- **spaCy / NLTK** – for NLP and keyword extraction  
-- **Pandas** – for data handling  
-- **Streamlit / Flask** *(optional)* – for UI  
-- **OpenAI / Transformers** *(optional)* – for semantic analysis or LLM integration
-
+- **Streamlit / Flask** *(optional)* – for UI
+- **API Key
 ---
 
 ## 🚀 Getting Started
@@ -30,4 +27,4 @@ A smart, AI-powered tool that parses resumes and evaluates candidate profiles ba
    ```bash
    git clone https://github.com/yourusername/resume-analyzer.git
    cd resume-analyzer
-# Resume_Analyzer
+
